@@ -19,6 +19,15 @@ html {
 
 body {
   margin: 0;
+  background-color: #F6DDDD;
+}
+
+header {
+  background-color: white;
+  background-image: url("../images/candy.svg");
+  background-size: 20px;
+  background-repeat: repeat;
+
 }
 
 h1 {
@@ -26,7 +35,11 @@ h1 {
   text-align: center;
   margin-bottom: 0;
   font-size: 2.6em;
+  color: #A66760;
+  padding-top: 0.5em;
 }
+
+668267
 
 nav li {
     display: inline-block;
@@ -44,6 +57,7 @@ h2 {
   text-align: center;
   font-family: "Grand Hotel", cursive;
   font-size: 2rem;
+  color: #A66760;
 }
 
 a {
@@ -53,10 +67,12 @@ a {
 
 h3 {
   text-align: center;
+  color: #668267;
 }
 
 h4 {
   text-align: center;
+  color: #668267;
 }
 
 
@@ -71,14 +87,18 @@ img {
 }
 
 a:hover {
-  background-color: grey;
+  color: #668267;;
 }
 
 footer {
   text-align: center;
 }
 
+.btn {
+  background-color: #A66760;
+  border-color: #A66760;
+}
 
-background-color: #F6D1D5;
-
-background-color: #F6DDDD;
+.candy {
+  padding-top: 1em;
+}
