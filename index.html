@@ -14,7 +14,7 @@
 </head>
 <body class="wrapper island">
 
-  <header>
+  <header role="banner">
     <h1>Beau's Bonbons</h1>
     <nav>
       <ul class="list-group island">
@@ -88,7 +88,7 @@
     <h2>Seasonal Specials</h2>
 
     <div class="island">
-      <img src="images/christmas-candy.jpg" alt="christmas-candy">
+      <img class="img-flex" src="images/christmas-candy.jpg" alt="christmas-candy">
       <h3 class="milli">Christmas</h3>
     </div>
 
@@ -111,18 +111,66 @@
       </thead>
       <tbody>
         <tr>
-          <td scope="row">something street</td>
+          <td>something street</td>
           <td>something second street</td>
           <td>whatever</td>
         </tr>
         <tr>
-          <td scope="row">something street</td>
+          <td>something street</td>
           <td>something second street</td>
           <td>whatever</td>
         </tr>
+      </tbody>
     </table>
 
     <h2>Order</h2>
+
+    <form class="push-0" method="POST" action="http://formspree.io/bradlet@algonquincollege.com">
+        <div class="push">
+          <label for="name">Name</label>
+          <input id="name" name="name">
+        </div>
+
+        <div class="push">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email">
+        </div>
+
+        <div class="push">
+          <label for="address">Address</label>
+          <input id="address" type="address" name="address">
+        </div>
+
+        <div class="push">
+          <label for="postal code">Postal Code</label>
+          <input id="postal code" type="postal code" name="postal code">
+        </div>
+
+        <div class="push">
+          <label for="city">City</label>
+          <input id="city" type="city" name="city">
+        </div>
+
+
+        <div class="push">
+          <label for="candy">Candy</label>
+          <select id="candy" name="_subject">
+            <option>Gumdrops!</option>
+            <option>General question</option>
+            <option>Just to talk</option>
+          </select>
+        </div>
+
+        <div class="push">
+          <label for="details">Notes<label>
+          <textarea id="details" name="message"></textarea>
+        </div>
+
+        <div>
+          <button class="btn btn-light" type="submit">Order!</button>
+        </div>
+
+      </form>
 
   </main>
 
