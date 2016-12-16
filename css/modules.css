@@ -41,27 +41,6 @@ summary {
   display: block;
 }
 
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline;
-}
-
-template {
-  display: none;
-}
-
-details {
-  cursor: pointer;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
 a,
 area,
 button,
@@ -208,63 +187,12 @@ svg.img-flex {
   width: 100%;
 }
 
-.media {
-  overflow: hidden;
-}
-
-.media-img, .media__img {
-  float: left;
-}
-
-.media-img-reversed, .media__img--reversed {
-  float: right;
-}
-
-.media-img-stacked, .media__img--stacked {
-  float: none;
-}
-
-.media-body, .media__body {
-  overflow: hidden;
-  min-width: 12em; /* Slightly less than 200px, responsiveness built in */
-}
-
 .icon {
   display: inline-block;
   position: relative;
   background: transparent none no-repeat center center;
   background-size: contain;
   vertical-align: middle;
-}
-
-.i-16, .i--16 {
-  height: 16px;
-  width: 16px;
-}
-
-.i-18, .i--18 {
-  height: 18px;
-  width: 18px;
-}
-
-.i-24, .i--24 {
-  height: 24px;
-  width: 24px;
-}
-
-.i-32, .i--32 {
-  height: 32px;
-  width: 32px;
-}
-
-.i-48, .i--48 {
-  height: 48px;
-  width: 48px;
-}
-
-.i-64, .i--64 {
-  height: 64px;
-  width: 64px;
 }
 
 .icon img,
