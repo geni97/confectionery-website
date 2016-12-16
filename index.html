@@ -18,7 +18,7 @@
     <h1>Beau's Bonbons</h1>
     <nav>
       <ul class="list-group island">
-        <li><a href="#">Candy</a></li>
+        <li><a class="skip-links" href="#">Candy</a></li>
         <li><a href="#">Seasonal Specials</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Locations</a></li>
@@ -26,7 +26,7 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main role="main">
 
     <h2>Candy</h2>
     <div class="grid">
@@ -88,7 +88,9 @@
     <h2>Seasonal Specials</h2>
 
     <div class="island">
-      <img class="img-flex" src="images/christmas-candy.jpg" alt="christmas-candy">
+      <div class="embed embed-1by1">
+        <img class="img-flex embed-item" src="images/christmas-candy.jpg" alt="christmas-candy">
+      </div>
       <h3 class="milli">Christmas</h3>
     </div>
 
@@ -101,12 +103,12 @@
 
     <h2>Locations</h2>
 
-    <table class="gutter">
+    <table class="gutter-1-2">
       <thead>
         <tr>
-          <th class="name" scope="col">Ottawa</th>
-          <th class="star" scope="col">Toronto</th>
-          <th class="year" scope="col">Montreal</th>
+          <th scope="col">Ottawa</th>
+          <th scope="col">Toronto</th>
+          <th scope="col">Montreal</th>
         </tr>
       </thead>
       <tbody>
@@ -123,54 +125,53 @@
       </tbody>
     </table>
 
-    <h2>Order</h2>
+    <h2 class="pad-t">Order</h2>
 
     <form class="push-0" method="POST" action="http://formspree.io/bradlet@algonquincollege.com">
-        <div class="push">
-          <label for="name">Name</label>
-          <input id="name" name="name">
-        </div>
+      <div class="push">
+        <label for="name">Name</label>
+        <input id="name" name="name">
+      </div>
 
-        <div class="push">
-          <label for="email">Email</label>
-          <input id="email" type="email" name="email">
-        </div>
+      <div class="push">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email">
+      </div>
 
-        <div class="push">
-          <label for="address">Address</label>
-          <input id="address" type="address" name="address">
-        </div>
+      <div class="push">
+        <label for="address">Address</label>
+        <input id="address" name="address">
+      </div>
 
-        <div class="push">
-          <label for="postal code">Postal Code</label>
-          <input id="postal code" type="postal code" name="postal code">
-        </div>
+      <div class="push">
+        <label for="postalcode">Postal Code</label>
+        <input id="postalcode" name="postal code">
+      </div>
 
-        <div class="push">
-          <label for="city">City</label>
-          <input id="city" type="city" name="city">
-        </div>
+      <div class="push">
+        <label for="city">City</label>
+        <input id="city" name="city">
+      </div>
 
+      <div class="push">
+        <label for="candy">Candy</label>
+        <select id="candy" name="_subject">
+          <option>Gumdrops!</option>
+          <option>General question</option>
+          <option>Just to talk</option>
+        </select>
+      </div>
 
-        <div class="push">
-          <label for="candy">Candy</label>
-          <select id="candy" name="_subject">
-            <option>Gumdrops!</option>
-            <option>General question</option>
-            <option>Just to talk</option>
-          </select>
-        </div>
+      <div class="push">
+        <label for="notes">Notes</label>
+        <textarea id="notes" name="notes"></textarea>
+      </div>
 
-        <div class="push">
-          <label for="details">Notes<label>
-          <textarea id="details" name="message"></textarea>
-        </div>
+      <div>
+        <button class="btn btn-light" type="submit">Order!</button>
+      </div>
 
-        <div>
-          <button class="btn btn-light" type="submit">Order!</button>
-        </div>
-
-      </form>
+    </form>
 
   </main>
 
